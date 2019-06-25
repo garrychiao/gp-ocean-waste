@@ -1,7 +1,10 @@
 <template>
   <el-container>
-      <el-main>Main</el-main>
-      <el-aside width="10em">NavBar</el-aside>
+    <el-header height="36px" class="hidden-sm-and-up"></el-header>
+    <el-main>Main</el-main>
+    <el-aside width="10em" class="hidden-sm-and-down">
+      <MainNavBar></MainNavBar>
+    </el-aside>
   </el-container>
 </template>
 
@@ -28,5 +31,15 @@ export default {
   z-index: 1;
   height: 100vh;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/deep/ .el-header {
+  background-color: #2F3B46;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 </style>
