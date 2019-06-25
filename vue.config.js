@@ -22,6 +22,9 @@ module.exports = {
           if (kebabTag.startsWith('ocean-')) {
             return [camelTag, `import ${camelTag} from '@/views/${camelTag}.vue'`]
           }
+          if (kebabTag.startsWith('main-')) {
+            return [camelTag, `import ${camelTag} from '@/components/${camelTag}.vue'`]
+          }
         }
       })
     ]
