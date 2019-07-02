@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <OceanMain></OceanMain>
+    <MainPage></MainPage>
   </div>
 </template>
 
