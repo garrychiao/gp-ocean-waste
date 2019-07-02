@@ -19,7 +19,7 @@ module.exports = {
       }),
       new VuetifyLoaderPlugin({
         match (originalTag, { kebabTag, camelTag, path, component }) {
-          if (kebabTag.startsWith('ocean-')) {
+          if (kebabTag.startsWith('session-')) {
             return [camelTag, `import ${camelTag} from '@/views/${camelTag}.vue'`]
           }
           if (kebabTag.startsWith('main-')) {
