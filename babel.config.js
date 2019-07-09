@@ -3,13 +3,6 @@ module.exports = {
     '@vue/app'
   ],
   plugins: [
-    'lodash',
-    [
-      'component',
-      {
-        'libraryName': 'element-ui',
-        'styleLibraryName': 'theme-chalk'
-      }
-    ]
+    'lodash'
   ]
 }

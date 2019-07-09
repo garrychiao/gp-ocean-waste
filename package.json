@@ -11,7 +11,9 @@
     "core-js": "^2.6.5",
     "element-ui": "^2.9.1",
     "vue": "^2.6.10",
+    "vue-image-compare": "^0.6.1",
     "vue-meta": "^2.0.4",
+    "vue-scroll-to": "^2.2.1",
     "vuetify": "^1.5.16",
     "vuetify-loader": "^1.2.2",
     "vuex": "^3.1.1"
@@ -21,7 +23,6 @@
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
     "babel-eslint": "^10.0.1",
-    "babel-plugin-component": "^1.1.1",
     "babel-plugin-lodash": "^3.3.4",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
