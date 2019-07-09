@@ -1,11 +1,19 @@
 <template>
   <el-container>
-    <el-header height="5em" class="hidden-sm-and-up">
-      <el-button circle icon="el-icon-search" @click="isShow = !isShow"></el-button>
+    <el-header height="5em">
+      <el-button icon="el-icon-more" @click="isShow = !isShow"></el-button>
       <MainHeader v-if="isShow"></MainHeader>
     </el-header>
-    <el-main>Main</el-main>
-    <el-aside width="10em" class="hidden-sm-and-down">
+    <el-main>
+        <SessionOceanWaste></SessionOceanWaste>
+        <SessionBigData></SessionBigData>
+        <SessionFisheryWaste></SessionFisheryWaste>
+        <SessionConclusion></SessionConclusion>
+        <SessionInvestigation></SessionInvestigation>
+        <SessionTeam></SessionTeam>
+        <SessionEastEgg></SessionEastEgg>
+    </el-main>
+    <el-aside width="10em">
       <MainNavBar></MainNavBar>
     </el-aside>
   </el-container>
@@ -20,28 +28,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .el-aside {
+.el-aside {
   background-color: #2F3B46;
   color: #FFF;
   height: 100%;
   width: 10em;
   position: fixed;
-  top: 0;
   right: 0;
   z-index: 9999;
 }
-/deep/ .el-main {
-  padding-right: 10em;
-  pagging-top: 5em;
+.el-main {
+  padding: 0px;
   position: relative;
   z-index: 1;
   height: 100vh;
-  padding: 0;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
-/deep/ .el-header {
+.el-header {
   background-color: #2F3B46;
   position: fixed;
   width: 100%;
@@ -51,12 +64,31 @@ export default {
   z-index: 9999;
   display: flex;
   align-items: center;
-  justify-content: center;
   .el-button {
     z-index: 9999;
-    position: relative;
-    top: 0;
-    right: 0;
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .el-aside {
+    display: none !important;
+  }
+  .el-main {
+    margin-top: 5em;
+    height: calc(100vh - 5em);
+  }
+}
+@media only screen and (min-width: 991px) {
+  .el-header {
+    display: none !important;
+  }
+  .el-main {
+    width: calc(100vw - 10em);
   }
 }
 </style>
