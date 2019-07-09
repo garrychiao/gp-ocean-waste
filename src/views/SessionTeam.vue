@@ -1,5 +1,7 @@
 <template>
-  <div class="screen-team"></div>
+  <div class="screen-team">
+    team
+  </div>
 </template>
 
 <script>
@@ -8,4 +10,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .screen-team {
+    height: inherit;
+    width: 100vw;
+  }
 </style>

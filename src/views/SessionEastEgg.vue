@@ -1,6 +1,6 @@
 <template>
   <div class="east-egg">
-    
+    east egg
   </div>
 </template>
 
@@ -10,4 +10,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .east-egg {
+    height: inherit;
+    width: 100vw;
+  }
 </style>
