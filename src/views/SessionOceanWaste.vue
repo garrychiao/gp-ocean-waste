@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss" scoped>
   .ocean-waste {
-    height: inherit;
+    height: initial;
     width: 100vw;
     .el-header {
       padding: 0;

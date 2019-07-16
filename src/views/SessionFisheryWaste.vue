@@ -11,7 +11,7 @@ export default {
 
 <style lang="scss" scoped>
   .fishery-waste {
-    height: inherit;
+    height: initial;
     width: 100vw;
   }
 </style>

@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss" scoped>
   .big-data {
-    height: inherit;
+    height: initial;
     width: 100vw;
   }
     /deep/ .image-compare-handle-icon {

@@ -11,7 +11,7 @@ export default {
 
 <style lang="scss" scoped>
   .east-egg {
-    height: inherit;
+    height: initial;
     width: 100vw;
   }
 </style>
