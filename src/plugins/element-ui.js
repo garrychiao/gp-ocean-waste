@@ -9,7 +9,10 @@ import {
   Header,
   Footer,
   Aside,
-  Card
+  Card,
+  Carousel,
+  CarouselItem,
+  Image
 } from 'element-ui'
 
 Vue.use(Button)
@@ -21,3 +24,6 @@ Vue.use(Header)
 Vue.use(Footer)
 Vue.use(Aside)
 Vue.use(Card)
+Vue.use(Carousel)
+Vue.use(CarouselItem)
+Vue.use(Image)
