@@ -8,12 +8,15 @@
 export default {
   name: 'app',
   metaInfo: {
-    title: 'GGininder'
+    title: 'Ocean Waste'
   }
 }
 </script>
 
 <style>
+body {
+  background-color: #fff3e0;
+}
 * {
   margin: 0;
   padding: 0;

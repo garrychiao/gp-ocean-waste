@@ -9,6 +9,9 @@
     "now-build": "vue-cli-service build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "core-js": "^2.6.5",
     "element-ui": "^2.9.1",
     "vue": "^2.6.10",

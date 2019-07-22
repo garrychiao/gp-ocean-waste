@@ -5,13 +5,13 @@
       <MainHeader v-if="isShow"></MainHeader>
     </el-header>
     <el-main>
-        <SessionOceanWaste></SessionOceanWaste>
-        <SessionBigData></SessionBigData>
-        <SessionFisheryWaste></SessionFisheryWaste>
-        <SessionConclusion></SessionConclusion>
-        <SessionInvestigation></SessionInvestigation>
-        <SessionTeam></SessionTeam>
-        <SessionEastEgg></SessionEastEgg>
+        <SessionOceanWaste class="section"></SessionOceanWaste>
+        <SessionBigData class="section"></SessionBigData>
+        <SessionFisheryWaste class="section"></SessionFisheryWaste>
+        <SessionConclusion class="section"></SessionConclusion>
+        <SessionInvestigation class="section"></SessionInvestigation>
+        <SessionTeam class="section"></SessionTeam>
+        <SessionEastEgg class="section"></SessionEastEgg>
     </el-main>
     <el-aside width="10em">
       <MainNavBar></MainNavBar>
@@ -89,6 +89,9 @@ export default {
   }
   .el-main {
     width: calc(100vw - 10em);
+  }
+  .section {
+    min-height: 100vh;
   }
 }
 </style>
